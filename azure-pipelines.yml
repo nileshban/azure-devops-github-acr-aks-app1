@@ -20,7 +20,7 @@ steps:
   
 - task: AzureCLI@2
   inputs:
-     azureSubscription: 'devopserviceconnection'
-     scriptType: 'ps'
-     scriptLocation: 'inlineScript'
-     inlineScript: 'az group list -o table'
+    azureSubscription: 'devopserviceconnection'
+    scriptType: 'bash'
+    scriptLocation: 'inlineScript'
+    inlineScript: 'az group list -o table'
